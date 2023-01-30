@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Four card feature section</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        color: #4d4f62;
+      }
+
+      .promo {
+        text-align: center;
+      }
+
+      .promo > h1 {
+        font-weight: 200;
+        font-size: 30px;
+      }
+
+      .promo > h2 {
+        font-weight: 600;
+        font-size: 28px;
+      }
+
+      .card {
+        border-block-start: 4px solid;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        padding: 0px 10px 5px 10px;
+        box-shadow: 0px 15px 30px -11px rgba(63, 70, 78, 0.5);
+      }
+
+      .card h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        margin-left: 24px;
+      }
+
+      .card > p {
+        font-weight: 300;
+        margin-left: 24px;
+      }
+
+      .supervisor {
+        border-block-start-color: #00c8c8;
+      }
+      .team-builder {
+        border-block-start-color: #ff637b;
+      }
+      .karma {
+        border-block-start-color: #fdbf00;
+      }
+      .calculator {
+        border-block-start-color: #377fd2;
+      }
+
+      /* spacing */
+      main {
+        width: 390px;
+        margin: auto;
+      }
+
+      .icon-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 35px;
+        margin-bottom: 25px;
+        margin-right: 24px;
+      }
+
+      /* change structure of html to have 3 cols */
+      /* do this only desktop */
+      @media screen and (min-width: 760px) {
+        main {
+          width: 80%;
+        }
+
+        .diamond {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .middle {
+          margin: 40px;
+        }
+
+        .card {
+          width: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="promo">
+        <h1>Reliable, efficient delivery</h1>
+        <h2>Powered by Technology</h2>
+        <p>
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </div>
+
+      <div class="diamond">
+        <div class="card supervisor">
+          <h3>Supervisor</h3>
+          <p>Monitors activity to identify project roadblocks</p>
+          <div class="icon-container">
+            <img src="./images/icon-supervisor.svg" alt="Supervisor" />
+          </div>
+        </div>
+
+        <div class="middle">
+          <div class="card team-builder">
+            <h3>Team Builder</h3>
+            <p>
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div class="icon-container">
+              <img src="./images//icon-team-builder.svg" alt="Team builder" />
+            </div>
+          </div>
+
+          <div class="card karma">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <div class="icon-container">
+              <img src="./images/icon-karma.svg" alt="Karma" />
+            </div>
+          </div>
+        </div>
+
+        <div class="card calculator">
+          <h3>Calculator</h3>
+          <p>
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <div class="icon-container">
+            <img src="./images/icon-calculator.svg" alt="Calculator" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
